@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Item - MUST Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="must.png" alt="MUST Logo" class="logo">
+            <h1>MUST Archive</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="claim-item.html" class="active">Claim Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Claim / Retrieve Form</h2>
+            <p>Fill out this form to claim an item that has been found</p>
+        </section>
+
+        <section class="claim-form-container">
+            <form id="claim-form">
+                <div class="form-group">
+                    <label for="item-id">Item Reference ID</label>
+                    <input type="text" id="item-id" required>
+                    <small>You can find this ID on the item details page</small>
+                </div>
+                <div class="form-group">
+                    <label for="item-name">Item Name</label>
+                    <input type="text" id="item-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="claimer-name">Your Full Name</label>
+                    <input type="text" id="claimer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="claimer-id">Student/Staff ID</label>
+                    <input type="text" id="claimer-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="claimer-phone">Phone Number</label>
+                    <input type="tel" id="claimer-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="claimer-email">Email Address</label>
+                    <input type="email" id="claimer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to the Item</label>
+                    <select id="relationship" required>
+                        <option value="">Select Relationship</option>
+                        <option value="owner">I am the owner</option>
+                        <option value="friend">I am collecting on behalf of a friend</option>
+                        <option value="family">I am collecting on behalf of a family member</option>
+                        <option value="other">Other (please specify)</option>
+                    </select>
+                </div>
+                <div class="form-group" id="other-relationship-group" style="display: none;">
+                    <label for="other-relationship">Please Specify</label>
+                    <input type="text" id="other-relationship">
+                </div>
+                <div class="form-group">
+                    <label for="item-description">Item Description</label>
+                    <textarea id="item-description" required placeholder="Please provide specific details about the item that only the owner would know"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="proof-upload">Upload Proof (Optional)</label>
+                    <input type="file" id="proof-upload" accept="image/*">
+                    <small>Upload a photo of you with the item, receipt, or other proof of ownership</small>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms-checkbox" required>
+                        I confirm that all information provided is accurate and I am the rightful owner or authorized to claim this item
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary-btn">Submit Claim</button>
+                    <button type="reset" class="btn secondary-btn">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="claim-info">
+            <h3>Claim Process Information</h3>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Submit Claim Form</h4>
+                        <p>Fill out the form with accurate details about the item and your identification</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Verification</h4>
+                        <p>Our team will verify your claim against the item details</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Notification</h4>
+                        <p>You will receive an email or SMS notification about your claim status</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Collection</h4>
+                        <p>If approved, you can collect your item from the Lost & Found office with your ID</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h3>Need Help?</h3>
+            <p>If you need assistance with claiming an item, please contact the Lost & Found office:</p>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> Location: Admin Block, Ground Floor, Room 12</p>
+                <p><i class="fas fa-phone"></i> Phone: +256 712 345 678</p>
+                <p><i class="fas fa-envelope"></i> Email: archive@must.ac.ug</p>
+                <p><i class="fas fa-clock"></i> Office Hours: Monday-Friday, 9:00 AM - 4:00 PM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="must.png" alt="MUST Logo" class="logo">
+                <h3>MUST Archive</h3>
+                <p>A project by students, for students</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-items.html">Lost Items</a></li>
+                    <li><a href="found-items.html">Found Items</a></li>
+                    <li><a href="claim-item.html">Claim Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> archive@must.ac.ug</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MUST Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

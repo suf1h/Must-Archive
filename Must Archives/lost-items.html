@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items - MUST Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="must.png" alt="MUST Logo" class="logo">
+            <h1>MUST Archive</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html" class="active">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="claim-item.html">Claim Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Lost Items Log</h2>
+            <p>Browse through items reported as lost on campus</p>
+        </section>
+
+        <section class="filter-section">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for items...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="documents">Documents</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="others">Others</option>
+                </select>
+                <select id="location-filter">
+                    <option value="">All Locations</option>
+                    <option value="library">Library</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="science-block">Science Block</option>
+                    <option value="dormitories">Dormitories</option>
+                    <option value="admin-block">Admin Block</option>
+                </select>
+                <select id="date-filter">
+                    <option value="">All Dates</option>
+                    <option value="today">Today</option>
+                    <option value="this-week">This Week</option>
+                    <option value="this-month">This Month</option>
+                    <option value="older">Older</option>
+                </select>
+            </div>
+            <button class="btn primary-btn" id="report-lost-btn">Report Lost Item</button>
+        </section>
+
+        <section class="items-grid">
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image2.jpg" alt="Laptop">
+                </div>
+                <div class="item-details">
+                    <h3>HP Laptop</h3>
+                    <p class="item-description">Silver HP Pavilion laptop with stickers on the cover</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Library, 2nd Floor</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 25, 2025</p>
+                    <p><i class="fas fa-user"></i> John Doe (0712345678)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image5.jpg" alt="ID Card">
+                </div>
+                <div class="item-details">
+                    <h3>Student ID Card</h3>
+                    <p class="item-description">MUST Student ID Card for Jane Smith</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Science Block, Room 204</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 26, 2025</p>
+                    <p><i class="fas fa-user"></i> Jane Smith (0723456789)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image6.jpg" alt="Textbook">
+                </div>
+                <div class="item-details">
+                    <h3>Physics Textbook</h3>
+                    <p class="item-description">University Physics textbook with handwritten notes</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cafeteria</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 27, 2025</p>
+                    <p><i class="fas fa-user"></i> Michael Johnson (0734567890)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image7.jpg" alt="Water Bottle">
+                </div>
+                <div class="item-details">
+                    <h3>Blue Water Bottle</h3>
+                    <p class="item-description">Blue metal water bottle with MUST logo</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sports Field</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 28, 2025</p>
+                    <p><i class="fas fa-user"></i> Sarah Williams (0745678901)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image8.jpg" alt="Glasses">
+                </div>
+                <div class="item-details">
+                    <h3>Reading Glasses</h3>
+                    <p class="item-description">Black-framed reading glasses in a red case</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Library, Study Room 3</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 28, 2025</p>
+                    <p><i class="fas fa-user"></i> David Brown (0756789012)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-image">
+                    <img src="images/image9.jpg" alt="Calculator">
+                </div>
+                <div class="item-details">
+                    <h3>Scientific Calculator</h3>
+                    <p class="item-description">Casio FX-991ES scientific calculator</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Engineering Block, Room 105</p>
+                    <p><i class="fas fa-calendar-alt"></i> April 29, 2025</p>
+                    <p><i class="fas fa-user"></i> Emily Davis (0767890123)</p>
+                    <div class="item-actions">
+                        <button class="btn secondary-btn view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Lost Item Report Modal -->
+        <div id="report-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Report Lost Item</h2>
+                <form id="report-lost-form">
+                    <div class="form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" id="item-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-description">Description</label>
+                        <textarea id="item-description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-category">Category</label>
+                        <select id="item-category" required>
+                            <option value="">Select Category</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="documents">Documents</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-location">Last Known Location</label>
+                        <input type="text" id="lost-location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lost-date">Date Lost</label>
+                        <input type="date" id="lost-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" id="contact-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-image">Upload Image (Optional)</label>
+                        <input type="file" id="item-image" accept="image/*">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary-btn">Submit Report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Item Details Modal -->
+        <div id="details-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="item-details-content">
+                    <!-- Content will be dynamically populated -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="must.png" alt="MUST Logo" class="logo">
+                <h3>MUST Archive</h3>
+                <p>A project by students, for students</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-items.html">Lost Items</a></li>
+                    <li><a href="found-items.html">Found Items</a></li>
+                    <li><a href="claim-item.html">Claim Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> archive@must.ac.ug</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MUST Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

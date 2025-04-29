@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MUST Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="must.png" alt="MUST Logo" class="logo">
+            <h1>MUST Archive</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="claim-item.html">Claim Item</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Contact Us</h2>
+            <p>Get in touch with the MUST Archive team</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info-card">
+                <h3>Lost & Found Office</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Admin Block, Ground Floor, Room 12</p>
+                    <p><i class="fas fa-phone"></i> Phone: +256 712 345 678</p>
+                    <p><i class="fas fa-envelope"></i> Email: archive@must.ac.ug</p>
+                    <p><i class="fas fa-clock"></i> Office Hours: Monday-Friday, 9:00 AM - 4:00 PM</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="campus-map-container">
+            <h3>Find Us on Campus</h3>
+            <div id="campus-map" class="campus-map"></div>
+            <div class="map-info">
+                <p>The Lost & Found office is located in the Admin Block, Ground Floor, Room 12.</p>
+                <p>You can visit us during office hours to report or claim lost items.</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do I report a lost item?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can report a lost item by visiting the "Lost Items" page and clicking on the "Report Lost Item" button. Fill out the form with as much detail as possible to increase the chances of recovery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long do you keep found items?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We keep found items for a period of 90 days. After this period, unclaimed items may be donated or disposed of according to university policy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What proof do I need to claim an item?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To claim an item, you need to provide your student/staff ID and be able to describe specific details about the item that only the owner would know. Additional proof such as receipts or photos may be required for valuable items.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can someone else collect my item on my behalf?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, someone else can collect an item on your behalf, but they must have a signed authorization letter from you, a copy of your ID, and their own ID for verification purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="must.png" alt="MUST Logo" class="logo">
+                <h3>MUST Archive</h3>
+                <p>A project by students, for students</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-items.html">Lost Items</a></li>
+                    <li><a href="found-items.html">Found Items</a></li>
+                    <li><a href="claim-item.html">Claim Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> archive@must.ac.ug</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MUST Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

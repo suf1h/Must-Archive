@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUST Archive - Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="must.png" alt="MUST Logo" class="logo">
+            <h1>MUST Archive</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="claim-item.html">Claim Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to MUST Archive</h2>
+                <h3>Reuniting you with your belongings</h3>
+                <p>This platform helps students and staff report, view, and recover lost and found items within the MUST campus.</p>
+                <div class="hero-buttons">
+                    <a href="lost-items.html" class="btn primary-btn">Report Lost Item</a>
+                    <a href="found-items.html" class="btn secondary-btn">View Found Items</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/image1.jpg" alt="Lost and Found Items">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Report Lost Items</h3>
+                <p>Easily report your lost items with detailed descriptions to increase chances of recovery.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-holding"></i>
+                </div>
+                <h3>Found Something?</h3>
+                <p>Submit details of items you've found to help reunite them with their owners.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Campus Map</h3>
+                <p>Visualize where items were lost or found using our interactive campus map.</p>
+            </div>
+        </section>
+
+        <section class="campus-map">
+            <h2>MUST Campus Map</h2>
+            <p>Explore the campus map to see where items were lost or found</p>
+            <div id="map"></div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>150+</h3>
+                <p>Items Recovered</p>
+            </div>
+            <div class="stat-card">
+                <h3>200+</h3>
+                <p>Items Reported</p>
+            </div>
+            <div class="stat-card">
+                <h3>120+</h3>
+                <p>Happy Reunions</p>
+            </div>
+        </section>
+
+        <section class="recent-items">
+            <h2>Recently Reported Items</h2>
+            <div class="items-container">
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/image2.jpg" alt="Laptop">
+                    </div>
+                    <div class="item-details">
+                        <h3>HP Laptop</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Library, 2nd Floor</p>
+                        <p><i class="fas fa-calendar-alt"></i> April 25, 2025</p>
+                        <span class="item-status lost">Lost</span>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/image3.jpg" alt="Wallet">
+                    </div>
+                    <div class="item-details">
+                        <h3>Brown Leather Wallet</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Science Block</p>
+                        <p><i class="fas fa-calendar-alt"></i> April 27, 2025</p>
+                        <span class="item-status found">Found</span>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div class="item-image">
+                        <img src="images/image4.jpg" alt="Keys">
+                    </div>
+                    <div class="item-details">
+                        <h3>Room Keys</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Cafeteria</p>
+                        <p><i class="fas fa-calendar-alt"></i> April 28, 2025</p>
+                        <span class="item-status found">Found</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="lost-items.html" class="btn primary-btn">View All Items</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="must.png" alt="MUST Logo" class="logo">
+                <h3>MUST Archive</h3>
+                <p>A project by students, for students</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-items.html">Lost Items</a></li>
+                    <li><a href="found-items.html">Found Items</a></li>
+                    <li><a href="claim-item.html">Claim Item</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> archive@must.ac.ug</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MUST Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
